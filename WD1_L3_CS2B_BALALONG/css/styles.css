@@ -1,0 +1,328 @@
+/* Base Page Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Navigation Layout */
+.top-header {
+    background-color: #f950eb;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.brand h1 {
+    font-size: 1.5rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-list a {
+    color: #110a00;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-list a:hover {
+    color: rgb(146, 0, 0);
+}
+
+/* Dropdown Menu Configuration */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #5e18b5;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.dropdown-menu li a {
+    padding: 8px 20px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Main Showcase Block (Hero) */
+.hero {
+    background: rgb(218, 223, 227);
+    border-radius: 12px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.eyebrow {
+    color: #e67e22;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.hero p {
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1a252f;
+    color: rgb(200, 20, 20);
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background-color: #34495e;
+}
+
+.hero-note {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #95a5a6;
+}
+
+.shoe-img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Shared Panel Designs (Cards) */
+.card {
+    background: rgb(240, 241, 240);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #34acca;
+    padding-bottom: 8px;
+}
+
+/* Grid Layouts for Sections */
+.content-grid, .info-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Features List Settings */
+.features-list {
+    list-style-type: none;
+}
+
+.features-list li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.features-list li::before {
+    content: "•";
+    color: #1a252f;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Sizing Guide Table Layout */
+.size-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.size-table th, .size-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e040b3;
+}
+
+.size-table th {
+    background-color: #1a252f;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.size-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Image Portfolio Section */
+.gallery-section {
+    margin-bottom: 30px;
+}
+
+.gallery-section h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Lists and Inline Links styling */
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    padding: 4px 0;
+}
+
+.text-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.shoe-icon {
+    font-style: normal;
+    margin-right: 5px;
+}
+
+/* Footnote Block */
+.footer {
+    background-color: #bc17cf;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+/* Container section sitting entirely below the footer */
+.fruit-showcase {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #fbeae6; /* Soft warm pink-cream backdrop */
+}
+
+/* Individual product cards */
+.fruit-item {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 290px;
+    box-shadow: 0 4px 12px rgba(90, 61, 49, 0.06); /* Subtly tinted shadow */
+    transition: transform 0.3s ease;
+}
+
+/* Card lift animation on hover */
+.fruit-item:hover {
+    transform: translateY(-6px);
+}
+
+/* Enforces uniform image constraints across your assets */
+.fruit-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Text arrangement */
+.fruit-info {
+    padding: 22px;
+    text-align: center;
+}
+
+.fruit-info h3 {
+    margin: 0 0 8px 0;
+    color: #5a3d31; /* Earthy brown tone matching your footer text */
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.fruit-info p {
+    margin: 0;
+    color: #8c7368; /* Light muted brown for readable descriptions */
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
